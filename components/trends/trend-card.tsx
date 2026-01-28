@@ -45,10 +45,10 @@ export default function TrendCard({ trend, onBookmark, isBookmarked = false }: T
                         <div className="flex flex-wrap gap-2 mb-4">
                             <span
                                 className={`px-3 py-1 rounded-full text-xs font-semibold ${trend.impact === "high"
-                                        ? "bg-red-100 text-red-700"
-                                        : trend.impact === "medium"
-                                            ? "bg-orange-100 text-orange-700"
-                                            : "bg-green-100 text-green-700"
+                                    ? "bg-red-100 text-red-700"
+                                    : trend.impact === "medium"
+                                        ? "bg-orange-100 text-orange-700"
+                                        : "bg-green-100 text-green-700"
                                     }`}
                             >
                                 {formatted.impactBadge.label}
@@ -197,7 +197,7 @@ export default function TrendCard({ trend, onBookmark, isBookmarked = false }: T
                     {/* Actions */}
                     <div className="flex flex-col gap-2">
                         <Button
-                            variant={isBookmarked ? "default" : "outline"}
+                            variant={isBookmarked ? "primary" : "outline"}
                             size="sm"
                             onClick={handleBookmark}
                         >
