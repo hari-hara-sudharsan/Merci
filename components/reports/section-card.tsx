@@ -92,7 +92,7 @@ function formatContent(content: string): string {
 
     // Bullet points: - item or * item
     formatted = formatted.replace(/^[\-\*]\s+(.+)$/gm, "<li>$1</li>");
-    formatted = formatted.replace(/(<li>.*<\/li>)/s, "<ul>$1</ul>");
+    formatted = formatted.replace(/(<li>[\s\S]*<\/li>)/g, "<ul>$1</ul>");
 
     // Numbered lists: 1. item
     formatted = formatted.replace(/^\d+\.\s+(.+)$/gm, "<li>$1</li>");
