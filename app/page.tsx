@@ -1,8 +1,8 @@
 export default function Home() {
     return (
-        <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-primary/10">
+        <main className="min-h-screen flex items-center justify-center gradient-bg">
             <div className="text-center space-y-6 p-8">
-                <h1 className="text-6xl font-display font-bold gradient-text animate-fade-in">
+                <h1 className="text-6xl font-display font-bold text-primary animate-fade-in">
                     Business Intelligence Platform
                 </h1>
                 <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-slide-up">
@@ -11,13 +11,13 @@ export default function Home() {
                 <div className="flex gap-4 justify-center animate-slide-up">
                     <a
                         href="/login"
-                        className="px-8 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-all hover:scale-105"
+                        className="btn-primary hover:scale-105"
                     >
                         Get Started
                     </a>
                     <a
                         href="/signup"
-                        className="px-8 py-3 rounded-lg glass glass-hover font-semibold transition-all hover:scale-105"
+                        className="btn-secondary hover:scale-105"
                     >
                         Sign Up
                     </a>
